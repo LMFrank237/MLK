@@ -27,7 +27,7 @@
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/styleLM2.css">
+  <link rel="stylesheet" href="css/styleLM3.css">
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/logo_dev.png">
@@ -41,7 +41,7 @@
     <header class="navigation" style="position: fixed; width: 100vw; margin: auto; z-index: 1000000000; background-color: transparent;">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <!-- header Nav Start -->
             <nav class="navbar">
               <div class="container-fluid">
@@ -53,11 +53,11 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">
+                  <a class="navbar-brand" href="index.html" id="logo_black">
                     <img src="images/logo.png" id="img_logo" style="width: 155px; height: 60px; margin-left: 0vw; margin-top: 0vh;" alt="Logo">
                   </a>
                   <a class="navbar-brand" href="index.html" id="logo_white">
-                    <img src="images/logo_.png" id="img_logo" style="width: 155px; height: 60px; margin-left: -110%; margin-top: 0vh;" alt="Logo">
+                    <img src="images/logo_.png" id="img_logo" style="width: 155px; height: 60px; margin-left: 0vw; margin-top: 0vh;" alt="Logo">
                   </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -115,7 +115,7 @@
             </div>
           </div><!-- .col-md-7 close -->
           <div class="col-md-5 col-sm-12">
-            <div class="block">
+            <div class="block" id="wrapper_img">
               <img src="images/wrapper-img.png" alt="Img">
             </div>
           </div><!-- .col-md-5 close -->
@@ -250,7 +250,7 @@
               <p>Judge for yourself the work we do and results we’ve achieved for other clients, and <br> meet our highly experienced Team who just love their work.</p>
             </div>
 
-            <div class="flex-lm counter-box clearfix">
+            <div class="flex-lm counter-box clearfix" id="p_numbs">
               <div>
                 <div class="counter-item">
                   <i class="ion-ios-chatboxes-outline"></i>
@@ -302,7 +302,7 @@
           </div>
         </div>
         <div class="row r-lm">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-7">
             <div class="block">
               <div>
                 <p><span style="font-weight: bold !important;">Email : maya@consulting.com </span> <br><span style="font-weight: bold !important;">Phone : +237 693 983 554 </span></p>
@@ -316,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-md-offset-1">
+          <div class="col-md-5 col-sm-5">
             <div class="testimonial-carousel text-center">
               <div  class="testimonial-slider owl-carousel">
                 <div>
@@ -411,6 +411,9 @@
       var dynamicHeight = window.pageYOffset;
       var elementN = document.querySelector('.navigation');
       var logoN = document.querySelector('#logo_white');
+      var logoB = document.querySelector('#logo_black');
+      logoB.style.display = "none";
+
       var offset1 = $(".about").offset().top;
       /*elementN.style.display = "none";*/
       elementN.style.background = "none";
@@ -421,6 +424,7 @@
           elementN.style.display = "block";
           elementN.style.backgroundColor = "transparent";
           logoN.style.display = "block";
+          logoB.style.display = "none";
           e1.classList.remove("inactive2");
           e1.classList.add("inactive");
           e2.classList.remove("inactive2");
@@ -436,6 +440,7 @@
           /*$('#img_logo').replaceWith('&lt;img src="images/logo_.png" id="img_logo" style="width: 155px; height: 60px; margin-left: -5vw; margin-top: 0vh;" alt="Logo" /&gt;');*/
           elementN.style.backgroundColor = "white";
           logoN.style.display = "none";
+          logoB.style.display = "block";
           e1.classList.remove("inactive");
           e1.classList.add("inactive2");
           e2.classList.remove("inactive");
