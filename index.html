@@ -1,65 +1,559 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/anais.css'%}">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="LM">
+
+  <title>Home - MAYA Consulting</title>
+
+  <!-- Mobile Specific Meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleLM2.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/logo_dev.png">
+
 </head>
-<body>
-    <div class="col-12 title"><p><h2><b>Predictions</b></h2></p></div>
-    <div class="bigdiv">
-        <form class="row g-3 pt-3 pl-3 pr-3" id="form-id" method="post" action="homepage">
-            <div class="col-12 mb-3  mt-0 pt-0 t-0">
-              <label for="inputName" class="form-label">Name</label>
-              <input name="Name" type="text" class="form-control form-control" id="inputName" placeholder="Ex: LM">
-            </div> 
-            <div class="col-12 mb-3  mt-0 pt-0 t-0">
-              <label for="inputEmail4" class="form-label">Age</label>
-              <input name="Age" type="number" class="form-control form-control" id="inputAge" placeholder="Ex: 22">
+
+  <body id="body">
+
+
+    <!-- Header Start -->
+    <header class="navigation" style="position: fixed; width: 100vw; margin: auto; z-index: 1000000000; background-color: transparent;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- header Nav Start -->
+            <nav class="navbar">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" id="img_logo" style="width: 155px; height: 60px; margin-left: 0vw; margin-top: 0vh;" alt="Logo">
+                  </a>
+                  <a class="navbar-brand" href="index.html" id="logo_white">
+                    <img src="images/logo_.png" id="img_logo" style="width: 155px; height: 60px; margin-left: -110%; margin-top: 0vh;" alt="Logo">
+                  </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right"  style="margin-top: -5px;">
+                    <li><a href="#" id="a1" class="active">Home</a></li>
+                    <li><a href="#aboutus" id="a2" class="inactive">About Us</a></li>
+                    <li><a href="#articles" id="a3" class="inactive">Articles</a></li>
+                    <li><a href="#Services" id="a4" class="inactive">Services</a></li>
+                    <li><a href="#contactus" id="a5" class="inactive">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header close -->
+
+
+
+    <!-- Slider Start -->
+    <section class="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h1 class="animated fadeInUp" style="color: white; font-weight: 400;">A Digital Marketing <br>  &#38; Design Agency</h1>
+              <p class="animated fadeInUp" style="color: white;">We the digital world & the work we do. We work closely with our clients to deliver </br> the best possible solutions for their needs</p>
+              <a href="#aboutus" class="btn btn-main animated fadeInUp btn-lm">Who we are ?</a>
             </div>
-            <div class="col-12 mb-3 mt-0 pt-0 t-0">
-              <label for="inputAddress" class="form-label">Parch</label>
-              <select name="Parch" id="inputParch" class="form-select form-select">
-                <option selected>1</option>
-                <option>0</option>
-              </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Wrapper Start -->
+    <section class="about section" id="aboutus">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                <h2>ABOUT US</h2>
+                <p>We are a digital start-up specialized Sentiment Analysis (Social, Private) & multiple Business Intelligence related domains</p>
+              </div>
+              <p>MAYA Consulting is a start-up group of dynamic youths established in 2021. MAYA Consulting is privileged to be the first Cameroonian firm of its kind that 
+                specializes in Competitive Sentimental Analysis (Social, Private) & Business Intelligence related domains.
+                Since our establishment, we have put in place a decisional information tracking technique which permits us to
+                build the most complete and updated database in diverse business sectors which helps us better satisfy our clients
+                in order to guarantee their competitiveness.</p>
             </div>
-            <div class="col-12 mb-3 mt-0 pt-0 t-0">
-              <label for="inputAddress2" class="form-label">Fare</label>
-              <input name="Fare" type="text" class="form-control form-control" id="inputFare" placeholder="Ex: 71.2833">
+          </div><!-- .col-md-7 close -->
+          <div class="col-md-5 col-sm-12">
+            <div class="block">
+              <img src="images/wrapper-img.png" alt="Img">
             </div>
-            <div class="col-12 mb-3 mt-0 pt-0 t-0">
-              <label for="inputState" class="form-label">Sex</label>
-              <select name="Sex" id="inputSex" class="form-select form-select">
-                <option selected>Male</option>
-                <option>Female</option>
-              </select>
+          </div><!-- .col-md-5 close -->
+        </div>
+      </div>
+    </section>
+
+    <section class="feature bg-2 articles" id="articles">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="title-art-top"><span class="title-art">ARTICLES</span></div>
+            <div class="imgs">
+              <div class="img-lm">
+                <div>  
+                  <p class="sub-title-art"><h3><b>TELECOM COMPANIES IN CAMEROON</b></h3></p>
+                  <br>
+
+                  <p class="para-art">Which Telecom Company in Cameroon is the best ?
+                    <br> 
+                    CASE STUDY : MTN, Orange & Camtel
+                  </p>
+
+                  <button class="btn-art">READ MORE</button>
+                </div>
+              </div>
+              <div class="img-lm">
+                <div>  
+                  <p class="sub-title-art"><h3><b>TELECOM COMPANIES IN CAMEROON</b></h3></p>
+                  <br>
+
+                  <p class="para-art">Which Telecom Company in Cameroon is the best ?
+                    <br> 
+                    CASE STUDY : MTN, Orange & Camtel
+                  </p>
+                  
+                  <button class="btn-art">READ MORE</button>
+                </div>
+              </div>
+              <div class="img-lm">
+                <div>  
+                  <p class="sub-title-art"><h3><b>TELECOM COMPANIES IN CAMEROON</b></h3></p>
+                  <br>
+
+                  <p class="para-art">Which Telecom Company in Cameroon is the best ?
+                    <br> 
+                    CASE STUDY : MTN, Orange & Camtel
+                  </p>
+                  
+                  <button class="btn-art">READ MORE</button>
+                </div>
+              </div>
             </div>
-            <div class="col-12 mb-3 mt-0 pt-0 t-0">
-              <label for="inputState" class="form-label">Class</label>
-              <select name="Class" id="inputClass" class="form-select form-select">
-                <option selected>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Service Start -->
+    <section class="service" id="Services">
+      <div class="container">
+        <div class="row">
+          <div class="section-title animated fadeInUp" id="elm1">
+            <h2>Our Services</h2>
+            <p>Man Lies not Numbers<br> Try and get it !</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-12 col-md-6 b1">
+            <div class="service-item even animated fadeInLeft" id="elm2">
+              <i class="icon ion-coffee"></i>
+              <h4>Sentiment Analysis</h4>
+              <p>Know what you customer's think about your Products / Services in order to better satisfy them. </p>
             </div>
-            <div class="col-12 mb-3 mt-0 pt-0 t-0">
-              <label for="inputState" class="form-label">Embarked</label>
-              <select name="Embarked" id="inputEmbarked" class="form-select form-select">
-                <option selected>S</option>
-                <option>C</option>
-                <option>Q</option>
-              </select>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <div class="service-item odd animated fadeInRight" id="elm3">
+              <i class="ion-leaf"></i>
+              <h4>Development</h4>
+              <p>Better response to customer's demand in order to increase satifaction, thus increasing fidelity.</p>
             </div>
-            <div class="col-12">
-              <button type="submit" class="col-12 btn btn-primary" id="btnPF">Predict</button>
+          </div>
+          
+          <div class="col-sm-12 col-md-6 b1">
+            <div class="service-item even animated fadeInLeft" id="elm4">
+              <i class="icon ion-coffee"></i>
+              <h4>Data Analysis</h4>
+              <p>Analyse your data and take the best decisions for your business. </p>
             </div>
-        </form>
-    </div>
-</body>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <div class="service-item odd animated fadeInRight" id="elm5">
+              <i class="ion-earth"></i>
+              <h4>Branding</h4>
+              <p>Rebrand the way you present your Products / Services to your customers. </p>
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-6 b1">
+            <div class="service-item even animated fadeInLeft" id="elm6">
+              <i class="ion-compass"></i>
+              <h4>Web Design</h4>
+              <p>Design awesome websites to present your Products and / Services to the world. </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <div class="service-item odd animated fadeInRight" id="elm7">
+              <i class="ion-image"></i>
+              <h4>App Design</h4>
+              <p>Design awesome apps to present your Products and / Services to the world. </p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Call to action Start -->
+    <section class="call-to-action bg-1 section-sm overly">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>Make the choice of Excellence</h2>
+              <p>Judge for yourself the work we do and results we’ve achieved for other clients, and <br> meet our highly experienced Team who just love their work.</p>
+            </div>
+
+            <div class="flex-lm counter-box clearfix">
+              <div>
+                <div class="counter-item">
+                  <i class="ion-ios-chatboxes-outline"></i>
+                  <h4 class="count" data-count="23">0</h4>
+                  <span>Clients</span>
+                </div>
+              </div>
+              <div>
+                <div class="counter-item">
+                  <i class="ion-ios-glasses-outline"></i>
+                  <h4 class="count" data-count="4">0</h4>
+                  <span>Articles</span>
+                </div>
+              </div>
+              <div>
+                <div class="counter-item">
+                  <i class="ion-ios-compose-outline"></i>
+                  <h4 class="count" data-count="10">0</h4>
+                  <span>Projects Completed</span>
+                </div>
+              </div>
+              <div>
+                <div class="counter-item">
+                  <i class="ion-ios-timer-outline"></i>
+                  <h4 class="count" data-count="13">0</h4>
+                  <span>Ongoing</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 
+              <div class="block">
+                <a class="btn btn-main btn-solid-border" href="#" >Read More</a>
+              </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Content Start -->
+    <section class="testimonial contactus" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class="row r-lm">
+          <div class="col-md-6">
+            <div class="block">
+              <div>
+                <p><span style="font-weight: bold !important;">Email : maya@consulting.com </span> <br><span style="font-weight: bold !important;">Phone : +237 693 983 554 </span></p>
+                <br>
+                <div>
+                  <form>
+                    <input type="text" placeholder="E-mail" class="input-lm" />
+                    <textarea name="textarea" placeholder="Message" class="textarea-lm" rows="6" cols="150"></textarea>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <div class="testimonial-carousel text-center">
+              <div  class="testimonial-slider owl-carousel">
+                <div>
+                  <i class="ion-quote"></i>
+                  <p>"I believe in quality work. Man lies, not numbers."</p>
+                  <div class="user">
+                    <img src="images/photoCV.png">
+                    <p><span>Tsemo Noula</span> Founder & CEO MAYA Consulting</p>
+                  </div>
+                </div>
+                <div>
+                  <i class="ion-quote"></i>
+                  <p>"Our Company brings innovative ideas and masterminds the way things are done."</p>
+                  <div class="user">
+                    <img src="images/hillary.jpg">
+                    <p><span>Tandjeu Hillary</span> Associate Partner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- footer Start -->
+    <footer class="footer foot-lm">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-manu">
+              <ul>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <p class="copyright">Copyright 2021 &copy; MAYA Consulting Ltd . All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- 
+      Essential Scripts
+      =====================================
+    -->
+    <!-- Main jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
+
+    <!-- Form Validator -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/map.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!-- Scrolling -->
+    <script>
+      e1 = document.querySelector('#a1');
+      e2 = document.querySelector('#a2');
+      e3 = document.querySelector('#a3');
+      e4 = document.querySelector('#a4');
+      e5 = document.querySelector('#a5');
+
+      elm1 = document.querySelector('#elm1')
+      elm2 = document.querySelector('#elm2')
+      elm3 = document.querySelector('#elm3')
+      elm4 = document.querySelector('#elm4')
+      elm5 = document.querySelector('#elm5')
+      elm6 = document.querySelector('#elm6')
+      elm7 = document.querySelector('#elm7')
+      
+      /* Dynamic Scroll */
+      var dynamicHeight = window.pageYOffset;
+      var elementN = document.querySelector('.navigation');
+      var logoN = document.querySelector('#logo_white');
+      var offset1 = $(".about").offset().top;
+      /*elementN.style.display = "none";*/
+      elementN.style.background = "none";
+      document.addEventListener('scroll', () => {
+        dynamicHeight = window.pageYOffset;
+        console.log(dynamicHeight);
+        if(dynamicHeight >= 10 && $(window).scrollTop() < offset1 - 100){
+          elementN.style.display = "block";
+          elementN.style.backgroundColor = "transparent";
+          logoN.style.display = "block";
+          e1.classList.remove("inactive2");
+          e1.classList.add("inactive");
+          e2.classList.remove("inactive2");
+          e2.classList.add("inactive");
+          e3.classList.remove("inactive2");
+          e3.classList.add("inactive");
+          e4.classList.remove("inactive2");
+          e4.classList.add("inactive");
+          e5.classList.remove("inactive2");
+          e5.classList.add("inactive");
+        }
+        else if($(window).scrollTop() >= offset1 - 100){
+          /*$('#img_logo').replaceWith('&lt;img src="images/logo_.png" id="img_logo" style="width: 155px; height: 60px; margin-left: -5vw; margin-top: 0vh;" alt="Logo" /&gt;');*/
+          elementN.style.backgroundColor = "white";
+          logoN.style.display = "none";
+          e1.classList.remove("inactive");
+          e1.classList.add("inactive2");
+          e2.classList.remove("inactive");
+          e2.classList.add("inactive2");
+          e3.classList.remove("inactive");
+          e3.classList.add("inactive2");
+          e4.classList.remove("inactive");
+          e4.classList.add("inactive2");
+          e5.classList.remove("inactive");
+          e5.classList.add("inactive2");
+        }
+      });
+
+      /* Dynamic scrolling */
+      $(window).scroll(function () {
+        var offset1 = $(".about").offset().top;
+        var offset2 = $(".articles").offset().top;
+        var offset3 = $(".service").offset().top;
+        var offset4 = $(".contactus").offset().top;
+        
+        if ($(window).scrollTop() < offset1 - 20){
+          e1.classList.remove("inactive");
+          e1.classList.add("active");
+          e2.style.color = "#5C5C5C";
+          e2.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e3.style.color = "#5C5C5C";
+          e3.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e4.style.color = "#5C5C5C";
+          e4.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e5.style.color = "#5C5C5C";
+          e5.style.borderBottom = "0px solid rgb(255, 145, 0)";
+        }
+        else if ($(window).scrollTop() >= offset1 - 20 && $(window).scrollTop() < offset2-80) {  
+          e1.classList.remove("active");
+          e1.classList.add("inactive")
+          e3.style.color = "#5C5C5C";
+          e3.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e4.style.color = "#5C5C5C";
+          e4.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e5.style.color = "#5C5C5C";
+          e5.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e2.style.color = "rgb(255, 145, 0)";
+          e2.style.borderBottom = "3px solid rgb(255, 145, 0)";
+        }
+        else if ($(window).scrollTop() >= offset2-80 && $(window).scrollTop() < offset3-80) {   
+          e1.classList.remove("active");
+          e1.classList.add("inactive")
+          e1.style.color = "#5C5C5C";
+          e1.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e2.style.color = "#5C5C5C";
+          e2.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e4.style.color = "#5C5C5C";
+          e4.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e5.style.color = "#5C5C5C";
+          e5.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e3.style.color = "rgb(255, 145, 0)";
+          e3.style.borderBottom = "3px solid rgb(255, 145, 0)";
+        }
+        else if ($(window).scrollTop() >= offset3-80 && $(window).scrollTop() < offset4-80) {  
+          e1.classList.remove("active");
+          e1.classList.add("inactive")
+          e1.style.color = "#5C5C5C";
+          e1.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e2.style.color = "#5C5C5C";
+          e2.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e3.style.color = "#5C5C5C";
+          e3.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e5.style.color = "#5C5C5C";
+          e5.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e4.style.color = "rgb(255, 145, 0)";
+          e4.style.borderBottom = "3px solid rgb(255, 145, 0)";
+
+          /* Elmts */
+          elm1.classList.remove("animated");
+          elm1.classList.remove("fadeInUp");
+          elm1.classList.add("animated");
+          elm1.classList.add("fadeInUp");
+        }
+        else if ($(window).scrollTop() >= offset4-76) {  
+          e1.classList.remove("active");
+          e1.classList.add("inactive")
+          e1.style.color = "#5C5C5C";
+          e1.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e2.style.color = "#5C5C5C";
+          e2.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e3.style.color = "#5C5C5C";
+          e3.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e4.style.color = "#5C5C5C";
+          e4.style.borderBottom = "0px solid rgb(255, 145, 0)";
+          e5.style.color = "rgb(255, 145, 0)";
+          e5.style.borderBottom = "3px solid rgb(255, 145, 0)";
+        }
+
+
+        
+        
+        /*if($(window).scrollTop() >= $('.topDivFN').offset().top + $('.topDivFN').outerHeight() - window.innerHeight + 150) {
+        /*  console.log('YOOOOOOOO')
+        /*  document.querySelector(".topDivR").classList.add("animate__animated");
+        /*  document.querySelector(".topDivR").classList.add("animate__fadeInUp");
+        /*}
+        /*
+        /*if($(window).scrollTop() >= $('.topDivR').offset().top + $('.topDivR').outerHeight() - window.innerHeight + 100) {
+        /*  console.log('YOOOOOOOO')
+        /*  document.querySelector(".topDivD").classList.add("animate__animated");
+        /*  document.querySelector(".topDivD").classList.add("animate__fadeInUp");
+        /*}
+        /*
+        /*if($(window).scrollTop() >= $('.topDivD').offset().top + $('.topDivD').outerHeight() - window.innerHeight + 150) {
+        /*  console.log('YOOOOOOOO')
+        /*  document.querySelector(".topDivP").classList.add("animate__animated");
+        /*  document.querySelector(".topDivP").classList.add("animate__fadeInUp");
+        /*} */
+
+      });
+    </script>
+
+  </body>
+
 </html>
+   
